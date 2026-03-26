@@ -202,17 +202,13 @@ run_query <- function(df, q, p1 = NA_character_, p2 = NA_character_) {
     section <- "position"
     result_tbl <- df %>%
       arrange(timestamp) %>%
-      select(player_name, game_name, score, timestamp) %>%
-      mutate(row_num = row_number()) %>%
-      filter(row_num == 1) %>%
+      slice_head(n = 1) %>%
       select(player_name, game_name, score, timestamp)
   } else if (q == "last_score") {
     section <- "position"
     result_tbl <- df %>%
       arrange(desc(timestamp)) %>%
-      select(player_name, game_name, score, timestamp) %>%
-      mutate(row_num = row_number()) %>%
-      filter(row_num == 1) %>%
+      slice_head(n = 1) %>%
       select(player_name, game_name, score, timestamp)
   } else if (q == "score_band_distribution") {
     section <- "statistics"
@@ -275,11 +271,21 @@ run_query <- function(df, q, p1 = NA_character_, p2 = NA_character_) {
 
   else if (q == "first_last_summary") {
     section <- "statistics"
-    result_tbl <- df %>%
-      summarise(
-        first_score = first(score),
-        last_score = last(score)
-      )
+
+    first_row <- df %>%
+      arrange(timestamp) %>%
+      slice_head(n = 1) %>%
+      collect()
+
+    last_row <- df %>%
+      arrange(desc(timestamp)) %>%
+      slice_head(n = 1) %>%
+      collect()
+
+    result_tbl <- data.frame(
+      first_score = first_row$score,
+      last_score = last_row$score
+    )
   }
 
   else if (q == "count_sessions") {
