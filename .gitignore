@@ -1,0 +1,25 @@
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Frontend env
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+
+# Node / frontend
+node_modules/
+frontend/node_modules/
+frontend/dist/
+
+# Spark generated artifacts
+spark/output.json
+metastore_db/
+derby.log
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

@@ -7,6 +7,7 @@ import Leaderboard from './pages/Leaderboard'
 import Search from './pages/Search'
 import Dashboard from './pages/Dashboard'
 import AdminDashboard from './pages/AdminDashboard'
+import SparkAnalytics from './pages/SparkAnalytics'
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Link to="/search" className="nav-link">Search</Link>
             <Link to="/dashboard" className="nav-link primary">Docs</Link>
             <Link to="/interactive" className="nav-link primary">Console</Link>
+            <Link to="/spark" className="nav-link primary">Spark</Link>
           </nav>
         </div>
       </header>
@@ -39,6 +41,7 @@ function App() {
           <Route path="/search" element={<Search />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/interactive" element={<AdminDashboard />} />
+          <Route path="/spark" element={<SparkAnalytics />} />
         </Routes>
       </main>
 
