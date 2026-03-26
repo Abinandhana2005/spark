@@ -1,19 +1,48 @@
 {
-  "query": "avg_score",
+  "query": "filter_by_game",
   "result": [
     {
-      "avg_score": 1050
+      "session_id": 1,
+      "player_name": "Alice",
+      "game_name": "Chess",
+      "score": 1200,
+      "win": 1,
+      "region": "India"
+    },
+    {
+      "session_id": 1,
+      "player_name": "Bob",
+      "game_name": "Chess",
+      "score": 900,
+      "win": 0,
+      "region": "India"
+    },
+    {
+      "session_id": 3,
+      "player_name": "Alice",
+      "game_name": "Chess",
+      "score": 1300,
+      "win": 1,
+      "region": "India"
+    },
+    {
+      "session_id": 6,
+      "player_name": "Grace",
+      "game_name": "Chess",
+      "score": 800,
+      "win": 0,
+      "region": "India"
     }
   ],
   "meta": {
     "status": "success",
-    "section": "game_analytics",
+    "section": "filters",
     "message": "Query executed.",
     "params": {
       "param1": "Chess",
       "param2": null
     },
-    "row_count": 1,
+    "row_count": 4,
     "baseR": {
       "if_example": {
         "input_score": 1200,

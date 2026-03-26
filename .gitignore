@@ -15,6 +15,7 @@ frontend/dist/
 
 # Spark generated artifacts
 spark/output.json
+spark/output/*
 metastore_db/
 derby.log
 

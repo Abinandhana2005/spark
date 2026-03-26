@@ -31,7 +31,10 @@ if (!grepl("/spark$", script_dir)) {
 }
 
 data_path <- file.path(script_dir, "data", "game_sessions.csv")
-output_path <- file.path(script_dir, "output.json")
+output_dir <- file.path(script_dir, "output")
+if (!dir.exists(output_dir)) dir.create(output_dir)
+
+output_path <- file.path(output_dir, paste0(query_name, ".json"))
 
 safe_number <- function(x, default = 0) {
   n <- suppressWarnings(as.numeric(x))
@@ -224,6 +227,77 @@ run_query <- function(df, q, p1 = NA_character_, p2 = NA_character_) {
       group_by(game_name) %>%
       summarise(total_wins = sum(win, na.rm = TRUE)) %>%
       arrange(desc(total_wins))
+  }   # ---------------- NEW REQUIRED QUERIES ----------------
+
+  else if (q == "mutate_bonus_score") {
+    section <- "mutate"
+    result_tbl <- df %>%
+      mutate(score_bonus = score + 100) %>%
+      select(player_name, game_name, score, score_bonus)
+  }
+
+  else if (q == "mutate_flag_highscore") {
+    section <- "mutate"
+    result_tbl <- df %>%
+      mutate(high_score_flag = ifelse(score >= 1500, 1, 0)) %>%
+      select(player_name, score, high_score_flag)
+  }
+
+  else if (q == "select_starts_with") {
+    section <- "select"
+    result_tbl <- df %>%
+      select(starts_with("player"))
+  }
+
+  else if (q == "select_ends_with") {
+    section <- "select"
+    result_tbl <- df %>%
+      select(ends_with("name"))
+  }
+
+  else if (q == "complex_filter") {
+    section <- "filters"
+    result_tbl <- df %>%
+      filter(score >= 1000 & win == TRUE | region == "India") %>%
+      select(player_name, game_name, score, win, region)
+  }
+
+  else if (q == "multi_summary") {
+    section <- "statistics"
+    result_tbl <- df %>%
+      summarise(
+        avg_score = mean(score, na.rm = TRUE),
+        max_score = max(score, na.rm = TRUE),
+        min_score = min(score, na.rm = TRUE),
+        total = n()
+      )
+  }
+
+  else if (q == "first_last_summary") {
+    section <- "statistics"
+    result_tbl <- df %>%
+      summarise(
+        first_score = first(score),
+        last_score = last(score)
+      )
+  }
+
+  else if (q == "count_sessions") {
+    section <- "statistics"
+    result_tbl <- df %>%
+      summarise(total_sessions = n())
+  }
+
+  else if (q == "group_multi_agg") {
+    section <- "group_by"
+    result_tbl <- df %>%
+      group_by(game_name) %>%
+      summarise(
+        avg_score = mean(score, na.rm = TRUE),
+        total_sessions = n(),
+        max_score = max(score, na.rm = TRUE)
+      ) %>%
+      arrange(desc(avg_score))
   } else {
     section <- "error"
     message <- "Unknown query_name. Please provide a supported query."
