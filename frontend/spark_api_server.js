@@ -16,7 +16,7 @@ app.use(express.json())
 
 const projectRoot = path.resolve(__dirname, '..')
 const rScriptPath = path.join(projectRoot, 'spark', 'run_stats_sparklyr.R')
-const outputPath = path.join(projectRoot, 'spark', 'output.json')
+const outputDir = path.join(projectRoot, 'spark', 'output')
 
 function runRScript(queryName, param1, param2) {
   return new Promise((resolve, reject) => {
@@ -56,6 +56,7 @@ app.post('/api/spark/query', async (req, res) => {
 
   try {
     await runRScript(queryName, String(param1), String(param2))
+    const outputPath = path.join(outputDir, `${queryName}.json`)
     const jsonText = await fs.readFile(outputPath, 'utf-8')
     const payload = JSON.parse(jsonText)
     res.json(payload)
