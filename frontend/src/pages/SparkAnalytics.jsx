@@ -58,6 +58,30 @@ const QUERY_GROUPS = [
       { key: 'first_score', label: 'first_score' },
       { key: 'last_score', label: 'last_score' }
     ]
+  },
+  {
+    title: 'Mutate',
+    queries: [
+      { key: 'mutate_bonus_score', label: 'mutate_bonus_score' },
+      { key: 'mutate_flag_highscore', label: 'mutate_flag_highscore' }
+    ]
+  },
+  {
+    title: 'Select',
+    queries: [
+      { key: 'select_starts_with', label: 'select_starts_with' },
+      { key: 'select_ends_with', label: 'select_ends_with' }
+    ]
+  },
+  {
+    title: 'Advanced',
+    queries: [
+      { key: 'complex_filter', label: 'complex_filter' },
+      { key: 'multi_summary', label: 'multi_summary' },
+      { key: 'first_last_summary', label: 'first_last_summary' },
+      { key: 'count_sessions', label: 'count_sessions' },
+      { key: 'group_multi_agg', label: 'group_multi_agg' }
+    ]
   }
 ]
 
@@ -149,7 +173,7 @@ export default function SparkAnalytics() {
       <div style={{ marginBottom: '1.5rem' }}>
         <h1 className="hero-title" style={{ fontSize: '2rem', textAlign: 'left' }}>Spark Analytics Console</h1>
         <p style={{ color: 'var(--gray-400)' }}>
-          React frontend for your `sparklyr` backend ({queryCount} queries wired)
+          Run sparklyr queries via the R backend ({queryCount} queries wired)
         </p>
       </div>
 

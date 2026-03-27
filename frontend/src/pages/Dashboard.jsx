@@ -48,7 +48,7 @@ export default function Dashboard() {
         </button>
       </div>
 
-      <div className="card" style={{ marginBottom: '1rem', padding: '0.75rem 1rem', borderLeft: '3px solid var(--primary)' }}>
+      <div className="card" style={{ marginBottom: '1rem', padding: '0.75rem 1rem', borderLeft: '3px solid var(--white)' }}>
         <code style={{ color: 'var(--gray-300)' }}>Base: http://localhost:8001/api/v1</code>
       </div>
 
