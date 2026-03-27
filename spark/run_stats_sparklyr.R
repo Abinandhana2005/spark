@@ -273,13 +273,11 @@ run_query <- function(df, q, p1 = NA_character_, p2 = NA_character_) {
     section <- "statistics"
 
     first_row <- df %>%
-      arrange(timestamp) %>%
-      slice_head(n = 1) %>%
+      slice_min(order_by = timestamp, n = 1) %>%
       collect()
 
     last_row <- df %>%
-      arrange(desc(timestamp)) %>%
-      slice_head(n = 1) %>%
+      slice_max(order_by = timestamp, n = 1) %>%
       collect()
 
     result_tbl <- data.frame(
