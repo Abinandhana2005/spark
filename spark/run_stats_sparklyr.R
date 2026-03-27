@@ -201,14 +201,12 @@ run_query <- function(df, q, p1 = NA_character_, p2 = NA_character_) {
   } else if (q == "first_score") {
     section <- "position"
     result_tbl <- df %>%
-      arrange(timestamp) %>%
-      slice_head(n = 1) %>%
+      slice_min(order_by = timestamp, n = 1) %>%
       select(player_name, game_name, score, timestamp)
   } else if (q == "last_score") {
     section <- "position"
     result_tbl <- df %>%
-      arrange(desc(timestamp)) %>%
-      slice_head(n = 1) %>%
+      slice_max(order_by = timestamp, n = 1) %>%
       select(player_name, game_name, score, timestamp)
   } else if (q == "score_band_distribution") {
     section <- "statistics"
