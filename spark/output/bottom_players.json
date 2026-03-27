@@ -1,0 +1,152 @@
+{
+  "query": "bottom_players",
+  "result": [
+    {
+      "player_name": "David",
+      "best_score": 200
+    },
+    {
+      "player_name": "Frank",
+      "best_score": 300
+    },
+    {
+      "player_name": "Charlie",
+      "best_score": 500
+    },
+    {
+      "player_name": "Eve",
+      "best_score": 700
+    },
+    {
+      "player_name": "Grace",
+      "best_score": 800
+    },
+    {
+      "player_name": "Bob",
+      "best_score": 900
+    },
+    {
+      "player_name": "Jack",
+      "best_score": 900
+    },
+    {
+      "player_name": "Sara",
+      "best_score": 1000
+    },
+    {
+      "player_name": "Leo",
+      "best_score": 1100
+    },
+    {
+      "player_name": "Alice",
+      "best_score": 1300
+    },
+    {
+      "player_name": "Paul",
+      "best_score": 1300
+    },
+    {
+      "player_name": "Usha",
+      "best_score": 1400
+    },
+    {
+      "player_name": "Kate",
+      "best_score": 1500
+    },
+    {
+      "player_name": "Tom",
+      "best_score": 1600
+    },
+    {
+      "player_name": "Nina",
+      "best_score": 1700
+    },
+    {
+      "player_name": "Ivy",
+      "best_score": 1800
+    },
+    {
+      "player_name": "Raj",
+      "best_score": 1800
+    },
+    {
+      "player_name": "Oscar",
+      "best_score": 1900
+    },
+    {
+      "player_name": "Hank",
+      "best_score": 2000
+    },
+    {
+      "player_name": "Mia",
+      "best_score": 2100
+    },
+    {
+      "player_name": "Quinn",
+      "best_score": 2500
+    }
+  ],
+  "meta": {
+    "status": "success",
+    "section": "sorting",
+    "message": "Query executed.",
+    "params": {
+      "param1": null,
+      "param2": null
+    },
+    "row_count": 21,
+    "baseR": {
+      "if_example": {
+        "input_score": 1200,
+        "grade": "high"
+      },
+      "ifelse_example": [
+        "no_bonus",
+        "bonus",
+        "bonus"
+      ],
+      "for_loop_sum": 15,
+      "while_loop_sum": 6,
+      "seq_example": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "sort_example": [
+        2,
+        4,
+        7,
+        9
+      ],
+      "rev_sort_example": [
+        9,
+        7,
+        4,
+        2
+      ],
+      "list_example": {
+        "player": "Alice",
+        "score": 1200,
+        "win": true
+      },
+      "matrix_example": [
+        [1, 2, 3],
+        [4, 5, 6]
+      ],
+      "factor_example": [
+        "India",
+        "USA",
+        "India",
+        "UK"
+      ],
+      "factor_levels": [
+        "India",
+        "UK",
+        "USA"
+      ],
+      "factor_nlevels": 3
+    }
+  }
+}

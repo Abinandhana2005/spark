@@ -1,0 +1,187 @@
+{
+  "query": "complex_filter",
+  "result": [
+    {
+      "player_name": "Alice",
+      "game_name": "Chess",
+      "score": 1200,
+      "win": 1,
+      "region": "India"
+    },
+    {
+      "player_name": "Bob",
+      "game_name": "Chess",
+      "score": 900,
+      "win": 0,
+      "region": "India"
+    },
+    {
+      "player_name": "Alice",
+      "game_name": "Chess",
+      "score": 1300,
+      "win": 1,
+      "region": "India"
+    },
+    {
+      "player_name": "Eve",
+      "game_name": "Carrom",
+      "score": 700,
+      "win": 1,
+      "region": "India"
+    },
+    {
+      "player_name": "Grace",
+      "game_name": "Chess",
+      "score": 800,
+      "win": 0,
+      "region": "India"
+    },
+    {
+      "player_name": "Hank",
+      "game_name": "Shooter",
+      "score": 2000,
+      "win": 1,
+      "region": "USA"
+    },
+    {
+      "player_name": "Ivy",
+      "game_name": "Shooter",
+      "score": 1800,
+      "win": 1,
+      "region": "USA"
+    },
+    {
+      "player_name": "Kate",
+      "game_name": "Racing",
+      "score": 1500,
+      "win": 1,
+      "region": "India"
+    },
+    {
+      "player_name": "Leo",
+      "game_name": "Racing",
+      "score": 1100,
+      "win": 0,
+      "region": "India"
+    },
+    {
+      "player_name": "Mia",
+      "game_name": "Football",
+      "score": 2100,
+      "win": 1,
+      "region": "USA"
+    },
+    {
+      "player_name": "Oscar",
+      "game_name": "Cricket",
+      "score": 1900,
+      "win": 1,
+      "region": "India"
+    },
+    {
+      "player_name": "Paul",
+      "game_name": "Cricket",
+      "score": 1300,
+      "win": 0,
+      "region": "India"
+    },
+    {
+      "player_name": "Quinn",
+      "game_name": "BattleRoyale",
+      "score": 2500,
+      "win": 1,
+      "region": "UK"
+    },
+    {
+      "player_name": "Raj",
+      "game_name": "BattleRoyale",
+      "score": 1800,
+      "win": 1,
+      "region": "India"
+    },
+    {
+      "player_name": "Sara",
+      "game_name": "BattleRoyale",
+      "score": 1000,
+      "win": 0,
+      "region": "India"
+    },
+    {
+      "player_name": "Tom",
+      "game_name": "Quiz",
+      "score": 1600,
+      "win": 1,
+      "region": "USA"
+    },
+    {
+      "player_name": "Usha",
+      "game_name": "Quiz",
+      "score": 1400,
+      "win": 1,
+      "region": "India"
+    }
+  ],
+  "meta": {
+    "status": "success",
+    "section": "filters",
+    "message": "Query executed.",
+    "params": {
+      "param1": null,
+      "param2": null
+    },
+    "row_count": 17,
+    "baseR": {
+      "if_example": {
+        "input_score": 1200,
+        "grade": "high"
+      },
+      "ifelse_example": [
+        "no_bonus",
+        "bonus",
+        "bonus"
+      ],
+      "for_loop_sum": 15,
+      "while_loop_sum": 6,
+      "seq_example": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "sort_example": [
+        2,
+        4,
+        7,
+        9
+      ],
+      "rev_sort_example": [
+        9,
+        7,
+        4,
+        2
+      ],
+      "list_example": {
+        "player": "Alice",
+        "score": 1200,
+        "win": true
+      },
+      "matrix_example": [
+        [1, 2, 3],
+        [4, 5, 6]
+      ],
+      "factor_example": [
+        "India",
+        "USA",
+        "India",
+        "UK"
+      ],
+      "factor_levels": [
+        "India",
+        "UK",
+        "USA"
+      ],
+      "factor_nlevels": 3
+    }
+  }
+}

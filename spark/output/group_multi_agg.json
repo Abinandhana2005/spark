@@ -1,0 +1,122 @@
+{
+  "query": "group_multi_agg",
+  "result": [
+    {
+      "game_name": "Football",
+      "avg_score": 1900,
+      "total_sessions": 2,
+      "max_score": 2100
+    },
+    {
+      "game_name": "BattleRoyale",
+      "avg_score": 1766.6667,
+      "total_sessions": 3,
+      "max_score": 2500
+    },
+    {
+      "game_name": "Cricket",
+      "avg_score": 1600,
+      "total_sessions": 2,
+      "max_score": 1900
+    },
+    {
+      "game_name": "Shooter",
+      "avg_score": 1566.6667,
+      "total_sessions": 3,
+      "max_score": 2000
+    },
+    {
+      "game_name": "Quiz",
+      "avg_score": 1500,
+      "total_sessions": 2,
+      "max_score": 1600
+    },
+    {
+      "game_name": "Racing",
+      "avg_score": 1300,
+      "total_sessions": 2,
+      "max_score": 1500
+    },
+    {
+      "game_name": "Chess",
+      "avg_score": 1050,
+      "total_sessions": 4,
+      "max_score": 1300
+    },
+    {
+      "game_name": "Carrom",
+      "avg_score": 700,
+      "total_sessions": 1,
+      "max_score": 700
+    },
+    {
+      "game_name": "Poker",
+      "avg_score": 333.3333,
+      "total_sessions": 3,
+      "max_score": 500
+    }
+  ],
+  "meta": {
+    "status": "success",
+    "section": "group_by",
+    "message": "Query executed.",
+    "params": {
+      "param1": null,
+      "param2": null
+    },
+    "row_count": 9,
+    "baseR": {
+      "if_example": {
+        "input_score": 1200,
+        "grade": "high"
+      },
+      "ifelse_example": [
+        "no_bonus",
+        "bonus",
+        "bonus"
+      ],
+      "for_loop_sum": 15,
+      "while_loop_sum": 6,
+      "seq_example": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "sort_example": [
+        2,
+        4,
+        7,
+        9
+      ],
+      "rev_sort_example": [
+        9,
+        7,
+        4,
+        2
+      ],
+      "list_example": {
+        "player": "Alice",
+        "score": 1200,
+        "win": true
+      },
+      "matrix_example": [
+        [1, 2, 3],
+        [4, 5, 6]
+      ],
+      "factor_example": [
+        "India",
+        "USA",
+        "India",
+        "UK"
+      ],
+      "factor_levels": [
+        "India",
+        "UK",
+        "USA"
+      ],
+      "factor_nlevels": 3
+    }
+  }
+}
