@@ -1,0 +1,104 @@
+{
+  "query": "wins_by_game",
+  "result": [
+    {
+      "game_name": "BattleRoyale",
+      "total_wins": 2
+    },
+    {
+      "game_name": "Shooter",
+      "total_wins": 2
+    },
+    {
+      "game_name": "Quiz",
+      "total_wins": 2
+    },
+    {
+      "game_name": "Chess",
+      "total_wins": 2
+    },
+    {
+      "game_name": "Carrom",
+      "total_wins": 1
+    },
+    {
+      "game_name": "Cricket",
+      "total_wins": 1
+    },
+    {
+      "game_name": "Racing",
+      "total_wins": 1
+    },
+    {
+      "game_name": "Football",
+      "total_wins": 1
+    },
+    {
+      "game_name": "Poker",
+      "total_wins": 1
+    }
+  ],
+  "meta": {
+    "status": "success",
+    "section": "group_by",
+    "message": "Query executed.",
+    "params": {
+      "param1": null,
+      "param2": null
+    },
+    "row_count": 9,
+    "baseR": {
+      "if_example": {
+        "input_score": 1200,
+        "grade": "high"
+      },
+      "ifelse_example": [
+        "no_bonus",
+        "bonus",
+        "bonus"
+      ],
+      "for_loop_sum": 15,
+      "while_loop_sum": 6,
+      "seq_example": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "sort_example": [
+        2,
+        4,
+        7,
+        9
+      ],
+      "rev_sort_example": [
+        9,
+        7,
+        4,
+        2
+      ],
+      "list_example": {
+        "player": "Alice",
+        "score": 1200,
+        "win": true
+      },
+      "matrix_example": [
+        [1, 2, 3],
+        [4, 5, 6]
+      ],
+      "factor_example": [
+        "India",
+        "USA",
+        "India",
+        "UK"
+      ],
+      "factor_levels": [
+        "India",
+        "UK",
+        "USA"
+      ],
+      "factor_nlevels": 3
+    }
+  }
+}

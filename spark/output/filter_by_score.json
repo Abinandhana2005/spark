@@ -1,0 +1,173 @@
+{
+  "query": "filter_by_score",
+  "result": [
+    {
+      "session_id": 1,
+      "player_name": "Alice",
+      "game_name": "Chess",
+      "score": 1200,
+      "rank": 10
+    },
+    {
+      "session_id": 3,
+      "player_name": "Alice",
+      "game_name": "Chess",
+      "score": 1300,
+      "rank": 8
+    },
+    {
+      "session_id": 7,
+      "player_name": "Hank",
+      "game_name": "Shooter",
+      "score": 2000,
+      "rank": 5
+    },
+    {
+      "session_id": 8,
+      "player_name": "Ivy",
+      "game_name": "Shooter",
+      "score": 1800,
+      "rank": 12
+    },
+    {
+      "session_id": 10,
+      "player_name": "Kate",
+      "game_name": "Racing",
+      "score": 1500,
+      "rank": 18
+    },
+    {
+      "session_id": 11,
+      "player_name": "Leo",
+      "game_name": "Racing",
+      "score": 1100,
+      "rank": 35
+    },
+    {
+      "session_id": 12,
+      "player_name": "Mia",
+      "game_name": "Football",
+      "score": 2100,
+      "rank": 7
+    },
+    {
+      "session_id": 13,
+      "player_name": "Nina",
+      "game_name": "Football",
+      "score": 1700,
+      "rank": 22
+    },
+    {
+      "session_id": 14,
+      "player_name": "Oscar",
+      "game_name": "Cricket",
+      "score": 1900,
+      "rank": 9
+    },
+    {
+      "session_id": 15,
+      "player_name": "Paul",
+      "game_name": "Cricket",
+      "score": 1300,
+      "rank": 28
+    },
+    {
+      "session_id": 16,
+      "player_name": "Quinn",
+      "game_name": "BattleRoyale",
+      "score": 2500,
+      "rank": 3
+    },
+    {
+      "session_id": 17,
+      "player_name": "Raj",
+      "game_name": "BattleRoyale",
+      "score": 1800,
+      "rank": 14
+    },
+    {
+      "session_id": 18,
+      "player_name": "Sara",
+      "game_name": "BattleRoyale",
+      "score": 1000,
+      "rank": 45
+    },
+    {
+      "session_id": 19,
+      "player_name": "Tom",
+      "game_name": "Quiz",
+      "score": 1600,
+      "rank": 11
+    },
+    {
+      "session_id": 20,
+      "player_name": "Usha",
+      "game_name": "Quiz",
+      "score": 1400,
+      "rank": 19
+    }
+  ],
+  "meta": {
+    "status": "success",
+    "section": "filters",
+    "message": "Query executed.",
+    "params": {
+      "param1": "1000",
+      "param2": null
+    },
+    "row_count": 15,
+    "baseR": {
+      "if_example": {
+        "input_score": 1200,
+        "grade": "high"
+      },
+      "ifelse_example": [
+        "no_bonus",
+        "bonus",
+        "bonus"
+      ],
+      "for_loop_sum": 15,
+      "while_loop_sum": 6,
+      "seq_example": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "sort_example": [
+        2,
+        4,
+        7,
+        9
+      ],
+      "rev_sort_example": [
+        9,
+        7,
+        4,
+        2
+      ],
+      "list_example": {
+        "player": "Alice",
+        "score": 1200,
+        "win": true
+      },
+      "matrix_example": [
+        [1, 2, 3],
+        [4, 5, 6]
+      ],
+      "factor_example": [
+        "India",
+        "USA",
+        "India",
+        "UK"
+      ],
+      "factor_levels": [
+        "India",
+        "UK",
+        "USA"
+      ],
+      "factor_nlevels": 3
+    }
+  }
+}

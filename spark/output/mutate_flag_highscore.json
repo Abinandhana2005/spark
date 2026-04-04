@@ -1,0 +1,178 @@
+{
+  "query": "mutate_flag_highscore",
+  "result": [
+    {
+      "player_name": "Alice",
+      "score": 1200,
+      "high_score_flag": 0
+    },
+    {
+      "player_name": "Bob",
+      "score": 900,
+      "high_score_flag": 0
+    },
+    {
+      "player_name": "Charlie",
+      "score": 500,
+      "high_score_flag": 0
+    },
+    {
+      "player_name": "David",
+      "score": 200,
+      "high_score_flag": 0
+    },
+    {
+      "player_name": "Alice",
+      "score": 1300,
+      "high_score_flag": 0
+    },
+    {
+      "player_name": "Eve",
+      "score": 700,
+      "high_score_flag": 0
+    },
+    {
+      "player_name": "Frank",
+      "score": 300,
+      "high_score_flag": 0
+    },
+    {
+      "player_name": "Grace",
+      "score": 800,
+      "high_score_flag": 0
+    },
+    {
+      "player_name": "Hank",
+      "score": 2000,
+      "high_score_flag": 1
+    },
+    {
+      "player_name": "Ivy",
+      "score": 1800,
+      "high_score_flag": 1
+    },
+    {
+      "player_name": "Jack",
+      "score": 900,
+      "high_score_flag": 0
+    },
+    {
+      "player_name": "Kate",
+      "score": 1500,
+      "high_score_flag": 1
+    },
+    {
+      "player_name": "Leo",
+      "score": 1100,
+      "high_score_flag": 0
+    },
+    {
+      "player_name": "Mia",
+      "score": 2100,
+      "high_score_flag": 1
+    },
+    {
+      "player_name": "Nina",
+      "score": 1700,
+      "high_score_flag": 1
+    },
+    {
+      "player_name": "Oscar",
+      "score": 1900,
+      "high_score_flag": 1
+    },
+    {
+      "player_name": "Paul",
+      "score": 1300,
+      "high_score_flag": 0
+    },
+    {
+      "player_name": "Quinn",
+      "score": 2500,
+      "high_score_flag": 1
+    },
+    {
+      "player_name": "Raj",
+      "score": 1800,
+      "high_score_flag": 1
+    },
+    {
+      "player_name": "Sara",
+      "score": 1000,
+      "high_score_flag": 0
+    },
+    {
+      "player_name": "Tom",
+      "score": 1600,
+      "high_score_flag": 1
+    },
+    {
+      "player_name": "Usha",
+      "score": 1400,
+      "high_score_flag": 0
+    }
+  ],
+  "meta": {
+    "status": "success",
+    "section": "mutate",
+    "message": "Query executed.",
+    "params": {
+      "param1": null,
+      "param2": null
+    },
+    "row_count": 22,
+    "baseR": {
+      "if_example": {
+        "input_score": 1200,
+        "grade": "high"
+      },
+      "ifelse_example": [
+        "no_bonus",
+        "bonus",
+        "bonus"
+      ],
+      "for_loop_sum": 15,
+      "while_loop_sum": 6,
+      "seq_example": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "sort_example": [
+        2,
+        4,
+        7,
+        9
+      ],
+      "rev_sort_example": [
+        9,
+        7,
+        4,
+        2
+      ],
+      "list_example": {
+        "player": "Alice",
+        "score": 1200,
+        "win": true
+      },
+      "matrix_example": [
+        [1, 2, 3],
+        [4, 5, 6]
+      ],
+      "factor_example": [
+        "India",
+        "USA",
+        "India",
+        "UK"
+      ],
+      "factor_levels": [
+        "India",
+        "UK",
+        "USA"
+      ],
+      "factor_nlevels": 3
+    }
+  }
+}

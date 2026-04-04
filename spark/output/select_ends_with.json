@@ -1,0 +1,156 @@
+{
+  "query": "select_ends_with",
+  "result": [
+    {
+      "player_name": "Alice",
+      "game_name": "Chess"
+    },
+    {
+      "player_name": "Bob",
+      "game_name": "Chess"
+    },
+    {
+      "player_name": "Charlie",
+      "game_name": "Poker"
+    },
+    {
+      "player_name": "David",
+      "game_name": "Poker"
+    },
+    {
+      "player_name": "Alice",
+      "game_name": "Chess"
+    },
+    {
+      "player_name": "Eve",
+      "game_name": "Carrom"
+    },
+    {
+      "player_name": "Frank",
+      "game_name": "Poker"
+    },
+    {
+      "player_name": "Grace",
+      "game_name": "Chess"
+    },
+    {
+      "player_name": "Hank",
+      "game_name": "Shooter"
+    },
+    {
+      "player_name": "Ivy",
+      "game_name": "Shooter"
+    },
+    {
+      "player_name": "Jack",
+      "game_name": "Shooter"
+    },
+    {
+      "player_name": "Kate",
+      "game_name": "Racing"
+    },
+    {
+      "player_name": "Leo",
+      "game_name": "Racing"
+    },
+    {
+      "player_name": "Mia",
+      "game_name": "Football"
+    },
+    {
+      "player_name": "Nina",
+      "game_name": "Football"
+    },
+    {
+      "player_name": "Oscar",
+      "game_name": "Cricket"
+    },
+    {
+      "player_name": "Paul",
+      "game_name": "Cricket"
+    },
+    {
+      "player_name": "Quinn",
+      "game_name": "BattleRoyale"
+    },
+    {
+      "player_name": "Raj",
+      "game_name": "BattleRoyale"
+    },
+    {
+      "player_name": "Sara",
+      "game_name": "BattleRoyale"
+    },
+    {
+      "player_name": "Tom",
+      "game_name": "Quiz"
+    },
+    {
+      "player_name": "Usha",
+      "game_name": "Quiz"
+    }
+  ],
+  "meta": {
+    "status": "success",
+    "section": "select",
+    "message": "Query executed.",
+    "params": {
+      "param1": null,
+      "param2": null
+    },
+    "row_count": 22,
+    "baseR": {
+      "if_example": {
+        "input_score": 1200,
+        "grade": "high"
+      },
+      "ifelse_example": [
+        "no_bonus",
+        "bonus",
+        "bonus"
+      ],
+      "for_loop_sum": 15,
+      "while_loop_sum": 6,
+      "seq_example": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "sort_example": [
+        2,
+        4,
+        7,
+        9
+      ],
+      "rev_sort_example": [
+        9,
+        7,
+        4,
+        2
+      ],
+      "list_example": {
+        "player": "Alice",
+        "score": 1200,
+        "win": true
+      },
+      "matrix_example": [
+        [1, 2, 3],
+        [4, 5, 6]
+      ],
+      "factor_example": [
+        "India",
+        "USA",
+        "India",
+        "UK"
+      ],
+      "factor_levels": [
+        "India",
+        "UK",
+        "USA"
+      ],
+      "factor_nlevels": 3
+    }
+  }
+}

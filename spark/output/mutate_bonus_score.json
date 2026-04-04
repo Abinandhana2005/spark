@@ -1,0 +1,200 @@
+{
+  "query": "mutate_bonus_score",
+  "result": [
+    {
+      "player_name": "Alice",
+      "game_name": "Chess",
+      "score": 1200,
+      "score_bonus": 1300
+    },
+    {
+      "player_name": "Bob",
+      "game_name": "Chess",
+      "score": 900,
+      "score_bonus": 1000
+    },
+    {
+      "player_name": "Charlie",
+      "game_name": "Poker",
+      "score": 500,
+      "score_bonus": 600
+    },
+    {
+      "player_name": "David",
+      "game_name": "Poker",
+      "score": 200,
+      "score_bonus": 300
+    },
+    {
+      "player_name": "Alice",
+      "game_name": "Chess",
+      "score": 1300,
+      "score_bonus": 1400
+    },
+    {
+      "player_name": "Eve",
+      "game_name": "Carrom",
+      "score": 700,
+      "score_bonus": 800
+    },
+    {
+      "player_name": "Frank",
+      "game_name": "Poker",
+      "score": 300,
+      "score_bonus": 400
+    },
+    {
+      "player_name": "Grace",
+      "game_name": "Chess",
+      "score": 800,
+      "score_bonus": 900
+    },
+    {
+      "player_name": "Hank",
+      "game_name": "Shooter",
+      "score": 2000,
+      "score_bonus": 2100
+    },
+    {
+      "player_name": "Ivy",
+      "game_name": "Shooter",
+      "score": 1800,
+      "score_bonus": 1900
+    },
+    {
+      "player_name": "Jack",
+      "game_name": "Shooter",
+      "score": 900,
+      "score_bonus": 1000
+    },
+    {
+      "player_name": "Kate",
+      "game_name": "Racing",
+      "score": 1500,
+      "score_bonus": 1600
+    },
+    {
+      "player_name": "Leo",
+      "game_name": "Racing",
+      "score": 1100,
+      "score_bonus": 1200
+    },
+    {
+      "player_name": "Mia",
+      "game_name": "Football",
+      "score": 2100,
+      "score_bonus": 2200
+    },
+    {
+      "player_name": "Nina",
+      "game_name": "Football",
+      "score": 1700,
+      "score_bonus": 1800
+    },
+    {
+      "player_name": "Oscar",
+      "game_name": "Cricket",
+      "score": 1900,
+      "score_bonus": 2000
+    },
+    {
+      "player_name": "Paul",
+      "game_name": "Cricket",
+      "score": 1300,
+      "score_bonus": 1400
+    },
+    {
+      "player_name": "Quinn",
+      "game_name": "BattleRoyale",
+      "score": 2500,
+      "score_bonus": 2600
+    },
+    {
+      "player_name": "Raj",
+      "game_name": "BattleRoyale",
+      "score": 1800,
+      "score_bonus": 1900
+    },
+    {
+      "player_name": "Sara",
+      "game_name": "BattleRoyale",
+      "score": 1000,
+      "score_bonus": 1100
+    },
+    {
+      "player_name": "Tom",
+      "game_name": "Quiz",
+      "score": 1600,
+      "score_bonus": 1700
+    },
+    {
+      "player_name": "Usha",
+      "game_name": "Quiz",
+      "score": 1400,
+      "score_bonus": 1500
+    }
+  ],
+  "meta": {
+    "status": "success",
+    "section": "mutate",
+    "message": "Query executed.",
+    "params": {
+      "param1": null,
+      "param2": null
+    },
+    "row_count": 22,
+    "baseR": {
+      "if_example": {
+        "input_score": 1200,
+        "grade": "high"
+      },
+      "ifelse_example": [
+        "no_bonus",
+        "bonus",
+        "bonus"
+      ],
+      "for_loop_sum": 15,
+      "while_loop_sum": 6,
+      "seq_example": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "sort_example": [
+        2,
+        4,
+        7,
+        9
+      ],
+      "rev_sort_example": [
+        9,
+        7,
+        4,
+        2
+      ],
+      "list_example": {
+        "player": "Alice",
+        "score": 1200,
+        "win": true
+      },
+      "matrix_example": [
+        [1, 2, 3],
+        [4, 5, 6]
+      ],
+      "factor_example": [
+        "India",
+        "USA",
+        "India",
+        "UK"
+      ],
+      "factor_levels": [
+        "India",
+        "UK",
+        "USA"
+      ],
+      "factor_nlevels": 3
+    }
+  }
+}
